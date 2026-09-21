@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+header {
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    font-size: 4.7em;
+}
+
+header > h2 {
+    padding-top: 14px;
+    font-size: 1.3em;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    font-family: 'Sriracha', cursive;
+    font-weight: 550;
+}
+
+p#p1 {
+    padding: 100px 0px 163px 30px;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: white;
+}
+
+div#imagem1 {
+    padding: 90px 0px 110px 30px;
+    background-image: url(Imagens/background001.jpg);
+    background-size: 1490px;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+p#p2 {
+    width: 375px;
+    color: white;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+p#p3 {
+    padding: 100px 0px 0px 30px;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: white;
+}
+
+p#p4 {
+    padding: 60px 0px 163px 30px;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: white;
+}
+
+div#imagem2 {
+    padding: 90px 0px 110px 30px;
+    background-image: url(Imagens/background002.jpg);
+    background-size: 1560px;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+p#p5 {
+    width: 424px;
+    color: white;
+    font-size: 2.21em;
+    line-height: 1.9em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+p#p6 {
+    padding: 100px 0px 0px 30px;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: white;
+}
+
+p#p7 {
+    padding: 60px 0px 163px 30px;
+    font-size: 2em;
+    line-height: 2.06em;
+    background-color: white;
+}
+
+footer > p {
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
