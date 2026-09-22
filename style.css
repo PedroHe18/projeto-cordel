@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 
 * {
     padding: 0;
@@ -12,19 +17,29 @@
     box-sizing: border-box;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
 header {
-    padding: 50px;
     background-color: black;
     text-align: center;
     color: white;
 }
 
 header > h1 {
-    font-size: 4.7em;
+    padding-top: 50px;
+
+    font-family: var(--fonte2);
+    font-size: 10vw;
+    font-variant: small-caps;
+    
 }
 
-header > h2 {
-    padding-top: 14px;
+header > p {
+    padding-bottom: 50px;
     font-size: 1.3em;
 }
 
@@ -32,93 +47,71 @@ body {
     background-color: black;
 }
 
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
 main {
-    font-family: 'Sriracha', cursive;
+    font-family: var(--fonte3);
     font-weight: 550;
 }
 
-p#p1 {
-    padding: 100px 0px 163px 30px;
-    font-size: 2em;
-    line-height: 2.06em;
+section {
+    padding-block: 10vh;
+    font-size: 3.5vw;
+}
+
+section.normal {
+    padding-left: 30px;
+    line-height: 2em;
     background-color: white;
 }
 
-div#imagem1 {
-    padding: 90px 0px 110px 30px;
-    background-image: url(Imagens/background001.jpg);
-    background-size: 1490px;
+section.imagem {
+    padding-left: 30px;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+
+    background-color: rgb(51, 51, 51);
+    background-size: cover;
     background-position: right center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-p#p2 {
-    width: 375px;
+section.imagem > p {
+    padding: 5px;
     color: white;
-    font-size: 2em;
-    line-height: 2.06em;
     background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
 }
 
-p#p3 {
-    padding: 100px 0px 0px 30px;
-    font-size: 2em;
-    line-height: 2.06em;
-    background-color: white;
+section#img1 {
+    background-image: url(Imagens/background001.jpg);
+    background-color: #012000;
 }
 
-p#p4 {
-    padding: 60px 0px 163px 30px;
-    font-size: 2em;
-    line-height: 2.06em;
-    background-color: white;
-}
-
-div#imagem2 {
-    padding: 90px 0px 110px 30px;
+section#img2 {
     background-image: url(Imagens/background002.jpg);
-    background-size: 1560px;
-    background-position: left top;
-    background-attachment: fixed;
+    background-color: rgba(245, 245, 245, 0.822);
 }
 
-p#p5 {
-    width: 424px;
+footer {
+    padding: 10px;
+    background-color: black;
     color: white;
-    font-size: 2.21em;
-    line-height: 1.9em;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-p#p6 {
-    padding: 100px 0px 0px 30px;
-    font-size: 2em;
-    line-height: 2.06em;
-    background-color: white;
-}
-
-p#p7 {
-    padding: 60px 0px 163px 30px;
-    font-size: 2em;
-    line-height: 2.06em;
-    background-color: white;
+    text-align: center;
 }
 
 footer > p {
-    padding: 10px;
-    text-align: center;
     font-family: sans-serif;
     font-weight: 200;
-    color: white;
     font-size: 1em;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
